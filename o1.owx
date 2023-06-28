@@ -1,0 +1,1333 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="ref" IRI="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <Literal>Creative Commons Attribution 4.0 International Public License
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License (&quot;Public License&quot;). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+Section 1 – Definitions.
+
+Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+Adapter&apos;s License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
+Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+Licensor means the individual(s) or entity(ies) granting rights under this Public License.
+Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
+Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
+You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+Section 2 – Scope.
+
+License grant.
+Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+reproduce and Share the Licensed Material, in whole or in part; and
+produce, reproduce, and Share Adapted Material.
+Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
+Term. The term of this Public License is specified in Section 6(a).
+Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
+Downstream recipients.
+Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
+No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
+No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+Other rights.
+
+Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+Patent and trademark rights are not licensed under this Public License.
+To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+Section 3 – License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+
+Attribution.
+
+If You Share the Licensed Material (including in modified form), You must:
+
+retain the following if it is supplied by the Licensor with the Licensed Material:
+identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+a copyright notice;
+a notice that refers to this Public License;
+a notice that refers to the disclaimer of warranties;
+a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
+If You Share Adapted Material You produce, the Adapter&apos;s License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
+Section 4 – Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+
+for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;
+if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
+You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
+For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
+Section 5 – Disclaimer of Warranties and Limitation of Liability.
+
+Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+Section 6 – Term and Termination.
+
+This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
+Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
+
+automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
+upon express reinstatement by the Licensor.
+For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
+For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+Section 7 – Other Terms and Conditions.
+
+The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
+Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
+Section 8 – Interpretation.
+
+For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
+To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
+No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
+
+Creative Commons may be contacted at creativecommons.org.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="sabanciuniv.edu with questions.">Ontology created by Samer Sharani. Contact: ssharani</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Attachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Belonging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CulturalIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EconomicIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EconomicWellbeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeAttachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeBelonging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomeMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HomePlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostAttachment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostBelonging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HostPlace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nationalized"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PlaceMaking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PoliticalProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefugeeAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RefugeeIdentity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reintegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialCapital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialIntegration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stayee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transnationalism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WouldBeReturnee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#LivesIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAgency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHome"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLevelOfIntegration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAttachedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#makePlaceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#practiceTransnationalism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ali1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Austria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BadSocialCapitalInHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BuildingHouseInGermany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CastleInSyria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Friends"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GoodSocialCapitalInhome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighCulturalIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighEconIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighEconWellbeingInHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighSocioIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HouseInGermany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Iran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JobGroup"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowCulturalIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowEconIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowEconWellbeingInhome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowSocioIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumCulturalIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumEconIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumEconWellbeingInHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSocialcapitalInHome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumSocioIntegration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PhD"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Poor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Remittance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RemoteInvestment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Salamieh"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samer1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samer2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Samer3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StablePoliticalProcess"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Syria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestAgencyQuery1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestAgencyQuery2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unskilled"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#UnstablePoliticalProcess"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CulturalIntegration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HighCulturalIntegration"/>
+            <NamedIndividual IRI="#LowCulturalIntegration"/>
+            <NamedIndividual IRI="#MediumCulturalIntegration"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EconomicIntegration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HighEconIntegration"/>
+            <NamedIndividual IRI="#LowEconIntegration"/>
+            <NamedIndividual IRI="#MediumEconIntegration"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EconomicWellbeing"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HighEconWellbeingInHome"/>
+            <NamedIndividual IRI="#LowEconWellbeingInhome"/>
+            <NamedIndividual IRI="#MediumEconWellbeingInHome"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PoliticalProcess"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#StablePoliticalProcess"/>
+            <NamedIndividual IRI="#UnstablePoliticalProcess"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SocialCapital"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#BadSocialCapitalInHome"/>
+            <NamedIndividual IRI="#GoodSocialCapitalInhome"/>
+            <NamedIndividual IRI="#MediumSocialcapitalInHome"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SocialIntegration"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#HighSocioIntegration"/>
+            <NamedIndividual IRI="#LowSocioIntegration"/>
+            <NamedIndividual IRI="#MediumSocioIntegration"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WouldBeReturnee"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Refugee"/>
+            <ObjectUnionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAgency"/>
+                        <Class IRI="#HighAgency"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#practiceTransnationalism"/>
+                        <Class IRI="#Transnationalism"/>
+                    </ObjectSomeValuesFrom>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAgency"/>
+                        <Class IRI="#HighAgency"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+                        <NamedIndividual IRI="#GoodSocialCapitalInhome"/>
+                    </ObjectHasValue>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAgency"/>
+                        <Class IRI="#HighAgency"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+                        <NamedIndividual IRI="#HighEconWellbeingInHome"/>
+                    </ObjectHasValue>
+                </ObjectIntersectionOf>
+                <ObjectIntersectionOf>
+                    <ObjectSomeValuesFrom>
+                        <ObjectProperty IRI="#hasAgency"/>
+                        <Class IRI="#HighAgency"/>
+                    </ObjectSomeValuesFrom>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+                        <NamedIndividual IRI="#StablePoliticalProcess"/>
+                    </ObjectHasValue>
+                </ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#belongTo"/>
+                    <Class IRI="#HomeBelonging"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#isAttachedTo"/>
+                    <Class IRI="#HomeAttachment"/>
+                </ObjectSomeValuesFrom>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#makePlaceOf"/>
+                    <Class IRI="#HomeMaking"/>
+                </ObjectSomeValuesFrom>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Attachment"/>
+        <Class IRI="#RefugeeIdentity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Belonging"/>
+        <Class IRI="#RefugeeIdentity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CulturalIntegration"/>
+        <Class IRI="#Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicIntegration"/>
+        <Class IRI="#Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EconomicWellbeing"/>
+        <Class IRI="#Reintegration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighAgency"/>
+        <Class IRI="#RefugeeAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeAttachment"/>
+        <Class IRI="#Attachment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeBelonging"/>
+        <Class IRI="#Belonging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomeMaking"/>
+        <Class IRI="#PlaceMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HomePlace"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostAttachment"/>
+        <Class IRI="#Attachment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostBelonging"/>
+        <Class IRI="#Belonging"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostMaking"/>
+        <Class IRI="#PlaceMaking"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HostPlace"/>
+        <Class IRI="#Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowAgency"/>
+        <Class IRI="#RefugeeAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nationalized"/>
+        <Class IRI="#Refugee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PlaceMaking"/>
+        <Class IRI="#RefugeeIdentity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PoliticalProcess"/>
+        <Class IRI="#Reintegration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialCapital"/>
+        <Class IRI="#Reintegration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialIntegration"/>
+        <Class IRI="#Integration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stayee"/>
+        <Class IRI="#Refugee"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Place"/>
+        <Class IRI="#Refugee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Place"/>
+        <Class IRI="#Transnationalism"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Refugee"/>
+        <Class IRI="#Transnationalism"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#Ali1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostPlace"/>
+        <NamedIndividual IRI="#Austria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialCapital"/>
+        <NamedIndividual IRI="#BadSocialCapitalInHome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostMaking"/>
+        <NamedIndividual IRI="#BuildingHouseInGermany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomeAttachment"/>
+        <NamedIndividual IRI="#CastleInSyria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HighAgency"/>
+        <NamedIndividual IRI="#Employee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostPlace"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomeBelonging"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostPlace"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostAttachment"/>
+        <NamedIndividual IRI="#HouseInGermany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomePlace"/>
+        <NamedIndividual IRI="#Iran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HostBelonging"/>
+        <NamedIndividual IRI="#JobGroup"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CulturalIntegration"/>
+        <NamedIndividual IRI="#LowCulturalIntegration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EconomicIntegration"/>
+        <NamedIndividual IRI="#LowEconIntegration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EconomicWellbeing"/>
+        <NamedIndividual IRI="#LowEconWellbeingInhome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SocialIntegration"/>
+        <NamedIndividual IRI="#LowSocioIntegration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HighAgency"/>
+        <NamedIndividual IRI="#PhD"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LowAgency"/>
+        <NamedIndividual IRI="#Poor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Transnationalism"/>
+        <NamedIndividual IRI="#Remittance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomeMaking"/>
+        <NamedIndividual IRI="#RemoteInvestment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomePlace"/>
+        <NamedIndividual IRI="#Salamieh"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#Samer1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#Samer2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#Samer3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HomePlace"/>
+        <NamedIndividual IRI="#Syria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WouldBeReturnee"/>
+        <NamedIndividual IRI="#TestAgencyQuery1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Refugee"/>
+        <NamedIndividual IRI="#TestAgencyQuery2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LowAgency"/>
+        <NamedIndividual IRI="#Unskilled"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PoliticalProcess"/>
+        <NamedIndividual IRI="#UnstablePoliticalProcess"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgency"/>
+        <NamedIndividual IRI="#Samer1"/>
+        <NamedIndividual IRI="#PhD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#practiceTransnationalism"/>
+        <NamedIndividual IRI="#Samer1"/>
+        <NamedIndividual IRI="#Remittance"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#belongTo"/>
+        <NamedIndividual IRI="#Samer2"/>
+        <NamedIndividual IRI="#Friends"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgency"/>
+        <NamedIndividual IRI="#Samer3"/>
+        <NamedIndividual IRI="#Poor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <NamedIndividual IRI="#Samer3"/>
+        <NamedIndividual IRI="#CastleInSyria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgency"/>
+        <NamedIndividual IRI="#TestAgencyQuery1"/>
+        <NamedIndividual IRI="#PhD"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAgency"/>
+        <NamedIndividual IRI="#TestAgencyQuery2"/>
+        <NamedIndividual IRI="#PhD"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#belongTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#makePlaceOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#LivesIn"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAgency"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHome"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLevelOfIntegration"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#makePlaceOf"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#practiceTransnationalism"/>
+        <Class IRI="#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#LivesIn"/>
+        <Class IRI="#HostPlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#belongTo"/>
+        <Class IRI="#Belonging"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAgency"/>
+        <Class IRI="#RefugeeAgency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExpectedLevelOfReintegration"/>
+        <Class IRI="#Reintegration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHome"/>
+        <Class IRI="#HomePlace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLevelOfIntegration"/>
+        <Class IRI="#Integration"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAttachedTo"/>
+        <Class IRI="#Attachment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#makePlaceOf"/>
+        <Class IRI="#PlaceMaking"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#practiceTransnationalism"/>
+        <Class IRI="#Transnationalism"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Ali1</IRI>
+        <Literal>Ali1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Attachment</IRI>
+        <Literal>Refugee&apos;s linkage to a place; to which extent a refugee is attached to a place as a part of her identity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Attachment</IRI>
+        <Literal>Attachment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Austria</IRI>
+        <Literal>Austria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BadSocialCapitalInHome</IRI>
+        <Literal>Bad Social Capital In Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Belonging</IRI>
+        <Literal>Refugee&apos;s linkage to a group; to which extent a refugee is self-identified as a member of a group (national, religious, ethnic, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Belonging</IRI>
+        <Literal>Belonging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BuildingHouseInGermany</IRI>
+        <Literal>Building House In Germany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CastleInSyria</IRI>
+        <Literal>Castle In Syria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#CulturalIntegration</IRI>
+        <Literal>The refugee&apos;s ability to speak the local language and to embrace or to live in harmony with the  values of the host country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CulturalIntegration</IRI>
+        <Literal>Cultural Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#EconomicIntegration</IRI>
+        <Literal>The refugee&apos;s ability to be active in the job market in the host place/country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EconomicIntegration</IRI>
+        <Literal>Economic Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EconomicWellbeing</IRI>
+        <Literal>Right now the RefugeeReturn Ontology models things at a fairly high level of abstraction. It is just the beginning of a model we plan to expand as we get actual data. So while in future versions each Refugee will have a specific value for EconomicWellbeing, in the current ontology EconomicWellbeing is a defined class with only three instances representing a range of values: High, Medium, and Low. This can still do some modeling work for us because we can reason about each different (abstract) value. As the ontology evolves and becomes richer, we anticipate that indeed each individual will have a specific value for their Economic Well-being.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#EconomicWellbeing</IRI>
+        <Literal>The ability of a returnee to be active in her home again economically and in the job market.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EconomicWellbeing</IRI>
+        <Literal>Economic Wellbeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Employee</IRI>
+        <Literal>Employee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#France</IRI>
+        <Literal>France</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Friends</IRI>
+        <Literal>Friends</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Germany</IRI>
+        <Literal>Germany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GoodSocialCapitalInhome</IRI>
+        <Literal>Good Social Capital Inhome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HighAgency</IRI>
+        <Literal>The highly autonomy, capability, and power enjoyed by a refugee in a way that makes her, even relatively, able to carve out her fate and livelihood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighAgency</IRI>
+        <Literal>High Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighCulturalIntegration</IRI>
+        <Literal>High Cultural Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighEconIntegration</IRI>
+        <Literal>High Econ Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighEconWellbeingInHome</IRI>
+        <Literal>High Econ Wellbeing In Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HighSocioIntegration</IRI>
+        <Literal>High Socio Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HomeAttachment</IRI>
+        <Literal>Refugee&apos;s attachement to a place(s) that is related to or located in her home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomeAttachment</IRI>
+        <Literal>Home Attachment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HomeBelonging</IRI>
+        <Literal>Belonging to a group that resides in refugees&apos; original country (home place).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomeBelonging</IRI>
+        <Literal>Home Belonging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HomeMaking</IRI>
+        <Literal>Activities that are located physcially  in the refugee&apos;s home place or essentially related to it (even if the refugee lives remotely).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomeMaking</IRI>
+        <Literal>Home Making</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HomePlace</IRI>
+        <Literal>The place of origin from where refugees had fled. It cna be a city, a vilalge, or a nation-state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HomePlace</IRI>
+        <Literal>Home Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HostAttachment</IRI>
+        <Literal>Refugee&apos;s attachement to a place(s) that is related to or located in her host place/country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HostAttachment</IRI>
+        <Literal>Host Attachment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HostBelonging</IRI>
+        <Literal>Belonging to a group(s) that resides or exists in the host country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HostBelonging</IRI>
+        <Literal>Host Belonging</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HostMaking</IRI>
+        <Literal>Activities that are located physcially in the refugee&apos;s host place or essentially related to it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HostMaking</IRI>
+        <Literal>Host Making</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#HostPlace</IRI>
+        <Literal>The place where a refugee lives. It may refer to a nation-state, city, or a village.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HostPlace</IRI>
+        <Literal>Host Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HouseInGermany</IRI>
+        <Literal>House In Germany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Integration</IRI>
+        <Literal>Active engagement of refugees in their host countries, culturally, economically, and socially. It is the opposite of exclusion, isolation, and limbo life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Integration</IRI>
+        <Literal>Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Iran</IRI>
+        <Literal>Iran</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#JobGroup</IRI>
+        <Literal>Job Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#LowAgency</IRI>
+        <Literal>The weak autonomy, capability, and power of a refugee in a way that makes her unable to carve out her fate and livelihood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowAgency</IRI>
+        <Literal>Low Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowCulturalIntegration</IRI>
+        <Literal>Low Cultural Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowEconIntegration</IRI>
+        <Literal>Low Econ Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowEconWellbeingInhome</IRI>
+        <Literal>Low Econ Wellbeing Inhome</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#LowSocioIntegration</IRI>
+        <Literal>Low Socio Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumCulturalIntegration</IRI>
+        <Literal>Medium Cultural Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumEconIntegration</IRI>
+        <Literal>Medium Econ Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumEconWellbeingInHome</IRI>
+        <Literal>Medium Econ Wellbeing In Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumSocialcapitalInHome</IRI>
+        <Literal>Medium Socialcapital In Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MediumSocioIntegration</IRI>
+        <Literal>Medium Socio Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Nationalized</IRI>
+        <Literal>A refugee who has been granted the citizenship of the host country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Nationalized</IRI>
+        <Literal>Nationalized</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PhD</IRI>
+        <Literal>Ph D</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Place</IRI>
+        <Literal>The physical, environemntal, and geographical &quot;container&quot; where a refugee (or any other person) lives, acts, resides, or passes through, and [the place is] the idea or abstract notion that a refugee refers to as a site of residence,  home, or an anchor of culture. Place need not be material only. It is immaterial entity (manifesting as perception of tradition, as memory, as a definer of identity, etc.) as much as a material entity or a physical site.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Place</IRI>
+        <Literal>Place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#PlaceMaking</IRI>
+        <Literal>The way a refugee conceptualizes, understands, and struggles to form - by whatever means she has - a place where she lives or desires to live (for example, by decorating her house in a similar way to traditional houses in her home place, or by political actiivities to form a new government in home, etc.).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PlaceMaking</IRI>
+        <Literal>Place Making</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PoliticalProcess</IRI>
+        <Literal>Right now the RefugeeReturn Ontology models things at a fairly high level of abstraction. It is just the beginning of a model we plan to expand as we get actual data. So while in future versions each Refugee will have a specific value for Political Process, in the current ontology Political Process is a defined class with only two instances representing a range of values: Stable, Unstable. This can still do some modeling work for us because we can reason about each different (abstract) value. As the ontology evolves and becomes richer, we anticipate that indeed each individual will have a specific value for their (perception of) the Political Process in their home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#PoliticalProcess</IRI>
+        <Literal>The ability of returnee to enjoy stable (at least) political environment in her home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PoliticalProcess</IRI>
+        <Literal>Political Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Poor</IRI>
+        <Literal>Poor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Refugee</IRI>
+        <Literal>A person who is (1) under temporary protection,  fully enjoys the legal definition of refugee status, or who resides illegally in a host place; and (2) who had fled her country of origin involuntarily.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Refugee</IRI>
+        <Literal>Refugee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#RefugeeAgency</IRI>
+        <Literal>The capability of refugees to act, to choose, to be as they believe that will serve their well-being the best. It is, in othre words, to be autonomous.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RefugeeAgency</IRI>
+        <Literal>Refugee  Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#RefugeeIdentity</IRI>
+        <Literal>The way a refugee defines herself; the sense of a self.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RefugeeIdentity</IRI>
+        <Literal>Refugee Identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Reintegration</IRI>
+        <Literal>The ability of those who return to re-establsih their lives in their countries of origin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Reintegration</IRI>
+        <Literal>Reintegration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Remittance</IRI>
+        <Literal>Remittance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RemoteInvestment</IRI>
+        <Literal>Remote Investment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Salamieh</IRI>
+        <Literal>Salamieh</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Samer1</IRI>
+        <Literal>Samer1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Samer2</IRI>
+        <Literal>Samer2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Samer3</IRI>
+        <Literal>Samer3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#SocialCapital</IRI>
+        <Literal>The social network, social capital, that a returnee has in her home.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialCapital</IRI>
+        <Literal>Social Capital</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#SocialIntegration</IRI>
+        <Literal>The refugee&apos;s ability to build a wide and deep social network in the host country, such as having friends and good relations with neighbors.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialIntegration</IRI>
+        <Literal>Social Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StablePoliticalProcess</IRI>
+        <Literal>Stable Political Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Stayee</IRI>
+        <Literal>A refugee who stays in the host country, legally or illegally,  without being nationalized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stayee</IRI>
+        <Literal>Stayee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Syria</IRI>
+        <Literal>Syria</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TestAgencyQuery1</IRI>
+        <Literal>Test Agency Query1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TestAgencyQuery2</IRI>
+        <Literal>Test Agency Query2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#Transnationalism</IRI>
+        <Literal>Activities of refugees that link or bridge multiple places together, home and host. These activities or practices can be endorsed at the everyday level or in the long term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Transnationalism</IRI>
+        <Literal>Transnationalism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Unskilled</IRI>
+        <Literal>Unskilled</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UnstablePoliticalProcess</IRI>
+        <Literal>Unstable Political Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#WouldBeReturnee</IRI>
+        <Literal>A refugee who is determinant and fully willing to return (to home).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WouldBeReturnee</IRI>
+        <Literal>Would Be Returnee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#belongTo</IRI>
+        <Literal>belong To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAgency</IRI>
+        <Literal>has Agency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasExpectedLevelOfReintegration</IRI>
+        <Literal>has Expected Level Of Reintegration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHome</IRI>
+        <Literal>has Home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLevelOfIntegration</IRI>
+        <Literal>has Level Of Integration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAttachedTo</IRI>
+        <Literal>is Attached To</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#makePlaceOf</IRI>
+        <Literal>make Place Of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#practiceTransnationalism</IRI>
+        <Literal>practice Transnationalism</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
