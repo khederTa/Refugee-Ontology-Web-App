@@ -50,9 +50,9 @@
         <hr />
         <div class="intro">
             <section class="intro-section">
-                <header class="intro-header">
+                <h2 class="intro-header">
                     <a id="intro">INTRODUCTION</a>
-                </header>
+                </h2>
                 <p>
                     The past decade has seen a significant increase in global refugee movements, largely due to
                     conflicts in the Middle East. This has resulted in a refugee crisis, particularly within the
@@ -72,7 +72,7 @@
 
         <hr />
         <div>
-            <header class="concept-header"><a id="concept">CONCEPT</a></header>
+            <h2 class="concept-header"><a id="concept">CONCEPT</a></h2>
             <div class="concept-section">
 
                 <aside class="graph1 left-concept">
@@ -86,13 +86,13 @@
         </div>
         <hr />
         <div id="allegrograph-query">
-            <header class="query-header">
+            <h2 class="query-header">
                 <a id="query">QUERY EXPLANATION</a>
-            </header>
+            </h2>
             <div class="query">
                 <aside class="left-query">
                     <form action="/query" method="POST">
-                        <h2>Make Queries On Refugees</h2>
+                        <h3>Make Queries On Refugees</h3>
 
                         <div class="cond-box">
                             <label class="query-name"
@@ -188,18 +188,18 @@
                 <section class="right-query">
                     <!-- {{sparql_query}} -->
                     <div class="result">
-                        <h2>Query Result</h2>
+                        <h3>Query Result</h3>
                         {% for item in result %}
                         <p>{{ item }}</p>
                         {% endfor %}
                     </div>
 
                 </section>
-                
+
             </div>
         </div>
     </main>
-    
+
     <footer>
         <p>Copyright &copy; 2023 <span>Refugee Would Be Returnee Ontology</span> All Rights Reserved.</p>
     </footer>
