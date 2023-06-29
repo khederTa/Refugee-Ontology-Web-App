@@ -20,20 +20,25 @@
     <main>
         <div class="abstract">
             <aside class="left-abstract">
-                <h2>THE TITLE OF PAPER</h2>
+                <h2>Ontology of Refugee Home
+                    Return V1</h2>
                 <!--<a href="#intro" class="learn">LEARN MORE</a>-->
             </aside>
             <section class="right-abstract">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis accusantium consectetur
-                    aspernatur nobis facere corporis dolores beatae voluptate harum sint sit nam inventore placeat,
-                    earum neque ullam voluptatibus nostrum ipsa quam! Explicabo eaque qui saepe temporibus adipisci,
-                    laudantium, aspernatur, totam assumenda repellat cumque voluptatem recusandae nostrum. Expedita, rem
-                    ipsa temporibus corrupti perspiciatis excepturi quibusdam sunt? Expedita, nisi id voluptatibus
-                    numquam soluta nemo? Sunt est dolorem aspernatur ratione iste cum fugiat quos labore, quisquam illum
-                    consequuntur veniam ipsam architecto ab explicabo, pariatur repudiandae veritatis eligendi.
-                    Dignissimos ullam, labore asperiores rem porro officia corrupti dolores magnam quod autem nostrum
-                    quas iste!
+                    Refugeehood is a multidimensional phenomenon and a complex challenge facing the world today. To
+                    equip policy-makers and civil organizations with knowledge tools that can improve their plans,
+                    programs, and evaluation, we developed an ontology of refugees’ home return. Home return is a
+                    sub-field of
+                    refugee studies and one of the most elusive concepts. Modeling this sub-field, using the OntoClean
+                    method,
+                    helps us create a coherent whole, accounting for the complex relations between the various factors
+                    that construct home return. In addition, the ontology rigorously defines and (re)constructs the
+                    concepts
+                    from the literature on home return, providing clarity and rigor for scholars of refugee studies. We
+                    conclude with discussion of future plans to develop an online application that makes this ontology
+                    friendly
+                    for normal users.
 
                 </p>
             </section>
@@ -45,22 +50,17 @@
                     <a id="intro">INTRODUCTION</a>
                 </header>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi eveniet ex tempora debitis
-                    nemo minima eius quisquam velit blanditiis quibusdam esse, ipsam eligendi sit minus suscipit qui
-                    tempore, ut sapiente, natus saepe exercitationem ipsum reiciendis libero. Incidunt laborum a nam
-                    ipsum consequatur eveniet iure, provident dolor saepe modi corporis optio ratione, quia veritatis
-                    sequi facere? Atque fugit soluta corporis temporibus delectus quam unde suscipit, expedita quae nam
-                    quibusdam iusto. Molestiae earum sequi quis nam? Molestias velit aperiam ea beatae ducimus soluta
-                    totam pariatur architecto, minima sit rem, laudantium harum quo! Dignissimos, quos voluptas rem et
-                    illo dolores reprehenderit soluta molestiae tempore natus consequuntur nesciunt minima, repellat
-                    cumque, dolore excepturi at id? Aliquam pariatur aperiam perferendis ullam a soluta similique rerum
-                    praesentium modi eveniet exercitationem magni, illum qui libero dolorum officia repudiandae nemo,
-                    quod cumque dolore! Tenetur, rem id magnam non nostrum rerum quos incidunt nesciunt recusandae odit
-                    suscipit doloribus officiis. Dolorum nostrum adipisci et soluta perspiciatis quod voluptatibus
-                    tenetur! Nesciunt magnam ipsum aperiam voluptatum! Aut magnam illo ducimus ab nemo praesentium
-                    fugit, nostrum molestiae consequatur, dolorem necessitatibus earum vel? Beatae suscipit, maxime
-                    provident ipsa eos minus debitis cumque culpa tempora iure neque nihil possimus facere, eligendi
-                    quam? Eius, veniam.
+                    The past decade has seen a significant increase in global refugee movements, largely due to
+                    conflicts in the Middle East. This has resulted in a refugee crisis, particularly within the
+                    European Union, causing political and social upheaval. This paper aims to develop an ontology to
+                    improve the management of refugee-related issues, focusing on the concept of home return. Despite
+                    extensive academic literature on refugees, practical application of this knowledge in governance
+                    remains challenging. The proposed ontology aims to bridge this gap, providing a structured approach
+                    to understanding and applying concepts from refugee studies. The methodology offers logical rigor
+                    and facilitates knowledge organization and semantic search. The long-term goals include enabling
+                    policy-makers to understand and apply concepts from the literature, and to upload real data to test
+                    relations between various concepts and measure program impact. The paper focuses on the complex
+                    issue of refugee home return, aiming to formally model this elusive field of knowledge.
 
                 </p>
             </section>
@@ -69,7 +69,7 @@
         <hr />
         <div>
             <header class="concept-header"><a id="concept">CONCEPT</a></header>
-            <div class="concept">
+            <div class="concept-section">
 
                 <aside class="graph1 left-concept">
                     <svg id="main-graph" width="800" height="600"></svg>
@@ -186,41 +186,18 @@
                     <div class="result">
                         <h2>Query Result</h2>
                         {% for item in result %}
-                            <p>{{ item }}</p>
+                        <p>{{ item }}</p>
                         {% endfor %}
                     </div>
 
                 </section>
-                <!-- <aside class="left-query">
-                    <p id="description_query">
-                        We have three groups of instances of Would-be Returnee: Samer1, Samer2, Samer3.
-                    <ul>
-                        <li>
-                            <b>Samer1</b> is a Would-be Returnee because he has high Agency (instance: PhD student) and he
-                            practices Transnationalism (instance: Remittance).</li>
-                        <li>
-                            <b>Samer2</b> is a Would-be Returnee because he has Home Belonging (instance: Friends).</li>
-                        <li>
-                            <b>Samer3</b> is a would-be Returnee because he has Home Attachment (instance: Castle in Syria).
-                        </li>
-                    </ul>
-                    This is a query of all instances that are Would-be Returnees with their properties.
-                    </p>
-                </aside>
-                <section class="right-query">
-                    <svg width="500" height="400" id="svg_query"></svg>
-                </section> -->
-                <!-- <button class="query-button" onclick="query1()">Has Agency</button>
-                <button class="query-button" onclick="query2()">Refugee Would Be Returnee</button>
-                <button class="query-button" onclick="query3()">Refugee Would Be Returnee But Only Refugee</button>
-                <button class="query-button" onclick="query4()">Subclass Of Refugee</button>
-                <button class="query-button" onclick="query5()">The Properties Of Refugees Who Are Would Be Returnee</button> -->
+                
             </div>
         </div>
     </main>
-    <hr />
+    
     <footer>
-
+        <p>Copyright &copy; 2023 <span>Refugee Would Be Returnee Ontology</span> All Rights Reserved.</p>
     </footer>
     <script src="{{ url_for('static', filename='js/index1.js') }}"></script>
     <!-- <script src="{{ url_for('static', filename='js/query1.js') }}"></script> -->
