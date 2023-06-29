@@ -337,3 +337,9 @@ footer p {
 footer p span{
     font-weight: bold;
 }
+
+@media (max-width: 700px){
+    footer p{
+        font-size: 11px !important;
+    }
+}
