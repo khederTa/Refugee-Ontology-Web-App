@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refugee ontology for home return">
+    <meta name="keywords" content="Refugee, Ontology, Returnee">
+    <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="shortcut icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yYb0GnhhfsHSlUDFbrjYGdAyM6QJ7Ygxyg&usqp=CAU"
@@ -182,7 +186,7 @@
                     </form>
                 </aside>
                 <section class="right-query">
-                    {{sparql_query}}
+                    <!-- {{sparql_query}} -->
                     <div class="result">
                         <h2>Query Result</h2>
                         {% for item in result %}
