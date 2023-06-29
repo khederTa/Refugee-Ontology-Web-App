@@ -16,16 +16,44 @@ def returnee():
     PREFIX ref: <http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology#>
 '''
     select = '''
-        SELECT DISTINCT ?refugee ?reftype
-        WHERE {?refugee ref:hasAgency ?agency;
-        rdf:type ?reftype;
-        ref:practiceTransnationalism ?trans.
-        ?agency rdf:type ref:HighAgency.}
+    SELECT DISTINCT ?refugee ?refAgency ?trans ?reintegrationSocialCapital ?reintegrationEconomicWellbeing ?reintegrationPoliticalProcess ?homeBelonging ?homeAttachment ?homeMaking
+    WHERE {
+        {
+            ?refugee ref:hasAgency ?refAgency .
+            ?refAgency rdf:type ref:HighAgency .
+            ?refugee ref:practiceTransnationalism ?trans .
+        } UNION {
+            ?refugee ref:hasAgency ?refAgency .
+            ?refAgency rdf:type ref:HighAgency .
+            ?refugee ref:hasExpectedLevelOfReintegration ?reintegrationSocialCapital .
+            ?reintegrationSocialCapital rdf:type ref:SocialCapital .
+        } UNION {
+            ?refugee ref:hasAgency ?refAgency .
+            ?refAgency rdf:type ref:HighAgency .
+            ?refugee ref:hasExpectedLevelOfReintegration ?reintegrationEconomicWellbeing .
+            ?reintegrationEconomicWellbeing rdf:type ref:EconomicWellbeing .
+        } UNION {
+            ?refugee ref:hasAgency ?refAgency .
+            ?refAgency rdf:type ref:HighAgency .
+            ?refugee ref:hasExpectedLevelOfReintegration ?reintegrationPoliticalProcess .
+            ?reintegrationPoliticalProcess rdf:type ref:PoliticalProcess .
+        } UNION {
+            ?refugee ref:belongTo ?homeBelonging .
+            ?homeBelonging rdf:type ref:HomeBelonging .
+        } UNION {
+            ?refugee ref:isAttachedTo ?homeAttachment .
+            ?homeAttachment rdf:type ref:HomeAttachment .
+        } UNION {
+            ?refugee ref:makePlaceOf ?homeMaking .
+            ?homeMaking rdf:type ref:HomeMaking .
+        }
+    }
     '''
     sparql_query = prefix+ select
 
     onto = get_ontology("o1.owx").load()
     result = list(default_world.sparql(sparql_query))
+    
     # return the results
     return render_template('index.html', sparql_query=select, result=result), 200
 
@@ -71,14 +99,14 @@ def query():
         ('?hostAttachment ', hostAttachment == 'on'),
         ('?homeMaking ', homeMaking == 'on'),
         ('?hostMaking ', hostMaking == 'on'),
-        ('?weak ', weak == 'on'),
-        ('?no ', no == 'on')
+        ('?weak ', weak == 'on')
+        #('?no ', no == 'on')
     ]
 
     where_clauses = [
         ('?refugee rdf:type ref:Refugee. ', True),
-        ('?refugee ref:belongTo ?belonging. ?belonging rdf:type ref:HomeBelonging. ', homeBelonging == 'on'),
-        ('?refugee ref:belongTo ?belonging. ?belonging rdf:type ref:HostBelonging. ', hostBelonging == 'on'),
+        ('?refugee ref:belongTo ?homeBelonging. ?homeBelonging rdf:type ref:HomeBelonging. ', homeBelonging == 'on'),
+        ('?refugee ref:belongTo ?hostBelonging. ?hostBelonging rdf:type ref:HostBelonging. ', hostBelonging == 'on'),
         ('?refugee ref:hasAgency ?refAgency. ?refAgency rdf:type ref:' + str(has_agency) + '. ', has_agency=='LowAgency' or has_agency=='HighAgency'),
         ('?refugee ref:hasExpectedLevelOfReintegration ?reintegrationEconomicWellbeing. ?reintegrationEconomicWellbeing rdf:type ref:EconomicWellbeing. ', economicWellbeing == 'on'),
         ('?refugee ref:hasExpectedLevelOfReintegration ?reintegrationPoliticalProcess. ?reintegrationPoliticalProcess rdf:type ref:PoliticalProcess. ', politicalProcess == 'on'),
@@ -102,7 +130,8 @@ def query():
     onto = get_ontology("o1.owx").load()
     result = list(default_world.sparql(sparql_query))
     
-
+    
+    
     # return the results
     return render_template('index.html', sparql_query=select, result=result), 200
 
