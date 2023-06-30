@@ -238,6 +238,8 @@ h3 {
 table {
     border-collapse: collapse;
     width: 100%;
+    font-size: 0.7rem;
+    margin: 0 auto;
 }
 
 td {
@@ -246,7 +248,7 @@ td {
 }
 
 th {
-    padding: 10px 15px;
+    padding: 7px 10px;
     background-color: #302b25;
     color: #e7dfd8;
 }
@@ -270,6 +272,7 @@ th:last-child {
 tr {
     border-bottom: 1px solid #302b2526;
 }
+
 
 .sub-sec-line {
     width: 50%;
