@@ -1,6 +1,20 @@
 from flask import Flask, render_template, request, jsonify
 from owlready2 import *
 
+def pre_process(lst):
+    res = []
+    tmp = []
+    cnt = 0
+    for it in lst:
+        tmp = []
+        for i in it:
+            i = str(i)
+            tmp.append(i[7:])
+        res.append(tmp)
+        cnt += 1
+    return res
+
+
 app = Flask(__name__)
 
 @app.get('/')
@@ -49,13 +63,17 @@ def returnee():
         }
     }
     '''
+
+    header = ['refugee', 'refAgency', 'transnationalism', 'reintegration Social Capital', 'reintegration Economic Wellbeing', 'reintegration Political Process',
+              'home Belonging', 'home Attachment', 'home Making']
     sparql_query = prefix+ select
 
     onto = get_ontology("o1.owx").load()
     result = list(default_world.sparql(sparql_query))
-    
+    result = pre_process(result)
+    print(type(header))
     # return the results
-    return render_template('index.html', sparql_query=select, result=result), 200
+    return render_template('index.html', sparql_query=select, result=result, header=header), 200
 
 @app.route('/query', methods=['POST'])
 def query():
@@ -75,8 +93,7 @@ def query():
     weak = request.form.get('weak')
     no = request.form.get('no')
 
-    
-    
+            
     prefix = '''
     PREFIX owl: <http://www.w3.org/2002/07/owl#>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -84,8 +101,9 @@ def query():
     PREFIX ref: <http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology#>
 '''
 
-    select_clause = 'SELECT DISTINCT ?refugee '
+    select_clause = 'SELECT DISTINCT '
     optional_clauses = [
+        ('?refugee ', True),
         ('?homeBelonging ', homeBelonging == 'on'),
         ('?hostBelonging ', hostBelonging == 'on'),
         ('?refAgency ', has_agency=='LowAgency' or has_agency=='HighAgency'),
@@ -102,6 +120,27 @@ def query():
         ('?weak ', weak == 'on')
         #('?no ', no == 'on')
     ]
+
+    header_clauses = [
+        ('refugee ', True),
+        ('home Belonging ', homeBelonging == 'on'),
+        ('host Belonging ', hostBelonging == 'on'),
+        ('refAgency ', has_agency=='LowAgency' or has_agency=='HighAgency'),
+        ('reintegration Economic Wellbeing ', economicWellbeing == 'on'),
+        ('reintegration Political Process ', politicalProcess == 'on'),
+        ('reintegration Social Capital ', socialCapital == 'on'),
+        ('cultural Integration ', culturalIntegration == 'on'),
+        ('economic Integration ', economicIntegration == 'on'),
+        ('social Integration ', socialIntegration == 'on'),
+        ('home Attachment ', homeAttachment == 'on'),
+        ('host Attachment ', hostAttachment == 'on'),
+        ('home Making ', homeMaking == 'on'),
+        ('host Making ', hostMaking == 'on'),
+        ('transnationalism ', weak == 'on')
+    ]
+
+    
+    header = ([head[0] for head in header_clauses if head[1]])
 
     where_clauses = [
         ('?refugee rdf:type ref:Refugee. ', True),
@@ -129,11 +168,10 @@ def query():
 
     onto = get_ontology("o1.owx").load()
     result = list(default_world.sparql(sparql_query))
-    
-    
-    
+    result = pre_process(result)
+    print(type(header))
     # return the results
-    return render_template('index.html', sparql_query=select, result=result), 200
+    return render_template('index.html', sparql_query=select, result=result, header=header), 200
 
 
     
