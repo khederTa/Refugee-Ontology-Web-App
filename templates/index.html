@@ -11,6 +11,34 @@
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yYb0GnhhfsHSlUDFbrjYGdAyM6QJ7Ygxyg&usqp=CAU"
         type="image/x-icon">
     <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .edge{
+            cursor: pointer;
+        }
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        .pointer-class {
+            cursor: pointer;
+        }
+
+        .pointer-class:hover {
+            font-weight: bold;
+        }
+    </style>
     <title>Refugee Ontology</title>
 </head>
 
@@ -69,19 +97,26 @@
                 </p>
             </section>
         </div>
-
         <hr />
         <div class="container">
             <h2 class="concept-header"><a id="concept">CONCEPT</a></h2>
             <div class="concept-section">
 
                 <aside class="graph1 left-concept">
-                    <svg id="main-graph" width="800" height="600"></svg>
+                    <div class="main-tree"></div>
                 </aside>
                 <section class="right-concept">
                     <h3>EXPLANATION</h3>
                     <p id="description"></p>
                 </section>
+            </div>
+        </div>
+
+        <hr />
+        <div class="container">
+            <h2 class="concept-header"><a id="concept">Relation</a></h2>
+            <div>
+                <svg id="main-graph" width="800" height="600"></svg>
             </div>
         </div>
         <hr />
@@ -183,8 +218,8 @@
                             <input type="submit" value="Refugee Would Be Returnee Query">
                         </div>
                     </form>
-                    
-                    
+
+
                 </aside>
                 <hr class="sub-sec-line" />
                 <section class="right-query">
@@ -194,18 +229,18 @@
                         <table>
                             <thead>
                                 {% for h in header %}
-                                    <th>{{ h }}</th>
+                                <th>{{ h }}</th>
                                 {% endfor %}
                             </thead>
                             <tbody>
                                 {% for item in result %}
-                                    <tr>
-                                        {% for it in item %}
-                                            {% if it != none %}
-                                                <td>{{ it }}</td>
-                                            {% endif %}
-                                        {% endfor %}
-                                    </tr>
+                                <tr>
+                                    {% for it in item %}
+                                    {% if it != none %}
+                                    <td>{{ it }}</td>
+                                    {% endif %}
+                                    {% endfor %}
+                                </tr>
                                 {% endfor %}
                             </tbody>
                         </table>
@@ -221,6 +256,7 @@
         <p>Copyright &copy; 2023 <span>Refugee Would Be Returnee Ontology</span> All Rights Reserved.</p>
     </footer>
     <script src="{{ url_for('static', filename='js/index1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index2.js') }}"></script>
 </body>
 
 </html>
