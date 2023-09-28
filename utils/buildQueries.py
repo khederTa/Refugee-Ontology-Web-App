@@ -63,9 +63,13 @@ def buildQuery():
     hostAttachment = request.form.get('hostAttachment')
     homeMaking = request.form.get('homeMaking')
     hostMaking = request.form.get('hostMaking')
-    weak = request.form.get('weak')
-    no = request.form.get('no')
-
+    transnationalism = request.form.get('transnationalism')
+    
+    
+    # tmp = {'homeBelonging': homeBelonging, 'homeBelonging':homeBelonging, 'has_agency': has_agency, 'economicWellbeing':economicWellbeing, 'politicalProcess':politicalProcess, 'socialCapital': socialCapital, 'culturalIntegration':culturalIntegration,
+    #     'economicIntegration':economicIntegration, 'socialIntegration':socialIntegration, 'homeAttachment':homeAttachment, 'hostAttachment': hostAttachment, 'homeMaking': homeMaking, 'hostMaking':hostMaking, 'transnationalism': transnationalism}
+    # for k, v in tmp.items():
+    #     print(k, v)
 
     select_clause = 'SELECT DISTINCT '
     optional_clauses = [
@@ -83,8 +87,9 @@ def buildQuery():
         ('?hostAttachment ', hostAttachment == 'on'),
         ('?homeMaking ', homeMaking == 'on'),
         ('?hostMaking ', hostMaking == 'on'),
-        ('?weak ', weak == 'on')
-        #('?no ', no == 'on')
+        ('?transnationalism ', transnationalism == 'yes')
+        #('?transnationalism ', transnationalism == 'no')
+#        ('?transnationalism ', transnationalism == 'yes' or transnationalism == 'no')
     ]
 
     header_clauses = [
@@ -102,7 +107,9 @@ def buildQuery():
         ('host Attachment ', hostAttachment == 'on'),
         ('home Making ', homeMaking == 'on'),
         ('host Making ', hostMaking == 'on'),
-        ('transnationalism ', weak == 'on')
+        ('?transnationalism ', transnationalism == 'yes')
+        #('?transnationalism ', transnationalism == 'no')
+#        ('transnationalism ', transnationalism == 'yes' or transnationalism == 'no')
     ]
 
     
@@ -123,12 +130,13 @@ def buildQuery():
         ('?refugee ref:isAttachedTo ?hostAttachment. ?hostAttachment rdf:type ref:HostAttachment. ', hostAttachment == 'on'),
         ('?refugee ref:makePlaceOf ?homeMaking. ?homeMaking rdf:type ref:HomeMaking. ', homeMaking == 'on'),
         ('?refugee ref:makePlaceOf ?hostMaking. ?hostMaking rdf:type ref:HostMaking. ', hostMaking == 'on'),
-        ('?refugee ref:practiceTransnationalism ?weak. ', weak == 'on'),
-        ('FILTER NOT EXISTS{?refugee ref:practiceTransnationalism ?weak.}', no == 'on')
+        ('?refugee ref:practiceTransnationalism ?transnationalism. ', transnationalism == 'yes'),
+        ('?refugee rdf:type ref:Refugee. FILTER NOT EXISTS {?refugee rdf:type ref:Refugee; ref:practiceTransnationalism ?transnationalism.}', transnationalism == 'no')
+#        ('?refugee ref:practiceTransnationalism ?transnationalism. ', transnationalism == 'yes' or transnationalism == 'no')
     ]
 
     where_clause_str = 'WHERE {' + ' '.join([clause[0] for clause in where_clauses if clause[1]]) + '}'
     select = select_clause + ' '.join([clause[0] for clause in optional_clauses if clause[1]]) + where_clause_str
     sparql_query = prefix + select  
-
+    print(sparql_query)
     return sparql_query, select, header
