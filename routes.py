@@ -19,6 +19,11 @@ def hello():
 def returnee():
     sparql_query, select, header = WouldBeReturneeQuery()
     onto = get_ontology("o2.owx").load()
+    # Access the ontology's world
+    world = default_world
+    # Enable reasoning using the HermiT reasoner
+    with world:
+        sync_reasoner_hermit()
     #with onto:
     #     sync_reasoner(infer_property_values = True, infer_data_property_values = True)
     onto.infer()
