@@ -1,0 +1,733 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology"
+         xmlns="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology#"
+         xmlns:term="http://purl.org/dc/terms/">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/ssharani/ontologies/2022/RefugeeHomeReturnOntology">
+  <term:license>Creative Commons Attribution 4.0 International Public License
+By exercising the Licensed Rights (defined below), You accept and agree to be bound by the terms and conditions of this Creative Commons Attribution 4.0 International Public License ("Public License"). To the extent this Public License may be interpreted as a contract, You are granted the Licensed Rights in consideration of Your acceptance of these terms and conditions, and the Licensor grants You such rights in consideration of benefits the Licensor receives from making the Licensed Material available under these terms and conditions.
+
+Section 1 – Definitions.
+
+Adapted Material means material subject to Copyright and Similar Rights that is derived from or based upon the Licensed Material and in which the Licensed Material is translated, altered, arranged, transformed, or otherwise modified in a manner requiring permission under the Copyright and Similar Rights held by the Licensor. For purposes of this Public License, where the Licensed Material is a musical work, performance, or sound recording, Adapted Material is always produced where the Licensed Material is synched in timed relation with a moving image.
+Adapter's License means the license You apply to Your Copyright and Similar Rights in Your contributions to Adapted Material in accordance with the terms and conditions of this Public License.
+Copyright and Similar Rights means copyright and/or similar rights closely related to copyright including, without limitation, performance, broadcast, sound recording, and Sui Generis Database Rights, without regard to how the rights are labeled or categorized. For purposes of this Public License, the rights specified in Section 2(b)(1)-(2) are not Copyright and Similar Rights.
+Effective Technological Measures means those measures that, in the absence of proper authority, may not be circumvented under laws fulfilling obligations under Article 11 of the WIPO Copyright Treaty adopted on December 20, 1996, and/or similar international agreements.
+Exceptions and Limitations means fair use, fair dealing, and/or any other exception or limitation to Copyright and Similar Rights that applies to Your use of the Licensed Material.
+Licensed Material means the artistic or literary work, database, or other material to which the Licensor applied this Public License.
+Licensed Rights means the rights granted to You subject to the terms and conditions of this Public License, which are limited to all Copyright and Similar Rights that apply to Your use of the Licensed Material and that the Licensor has authority to license.
+Licensor means the individual(s) or entity(ies) granting rights under this Public License.
+Share means to provide material to the public by any means or process that requires permission under the Licensed Rights, such as reproduction, public display, public performance, distribution, dissemination, communication, or importation, and to make material available to the public including in ways that members of the public may access the material from a place and at a time individually chosen by them.
+Sui Generis Database Rights means rights other than copyright resulting from Directive 96/9/EC of the European Parliament and of the Council of 11 March 1996 on the legal protection of databases, as amended and/or succeeded, as well as other essentially equivalent rights anywhere in the world.
+You means the individual or entity exercising the Licensed Rights under this Public License. Your has a corresponding meaning.
+Section 2 – Scope.
+
+License grant.
+Subject to the terms and conditions of this Public License, the Licensor hereby grants You a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to exercise the Licensed Rights in the Licensed Material to:
+reproduce and Share the Licensed Material, in whole or in part; and
+produce, reproduce, and Share Adapted Material.
+Exceptions and Limitations. For the avoidance of doubt, where Exceptions and Limitations apply to Your use, this Public License does not apply, and You do not need to comply with its terms and conditions.
+Term. The term of this Public License is specified in Section 6(a).
+Media and formats; technical modifications allowed. The Licensor authorizes You to exercise the Licensed Rights in all media and formats whether now known or hereafter created, and to make technical modifications necessary to do so. The Licensor waives and/or agrees not to assert any right or authority to forbid You from making technical modifications necessary to exercise the Licensed Rights, including technical modifications necessary to circumvent Effective Technological Measures. For purposes of this Public License, simply making modifications authorized by this Section 2(a)(4) never produces Adapted Material.
+Downstream recipients.
+Offer from the Licensor – Licensed Material. Every recipient of the Licensed Material automatically receives an offer from the Licensor to exercise the Licensed Rights under the terms and conditions of this Public License.
+No downstream restrictions. You may not offer or impose any additional or different terms or conditions on, or apply any Effective Technological Measures to, the Licensed Material if doing so restricts exercise of the Licensed Rights by any recipient of the Licensed Material.
+No endorsement. Nothing in this Public License constitutes or may be construed as permission to assert or imply that You are, or that Your use of the Licensed Material is, connected with, or sponsored, endorsed, or granted official status by, the Licensor or others designated to receive attribution as provided in Section 3(a)(1)(A)(i).
+Other rights.
+
+Moral rights, such as the right of integrity, are not licensed under this Public License, nor are publicity, privacy, and/or other similar personality rights; however, to the extent possible, the Licensor waives and/or agrees not to assert any such rights held by the Licensor to the limited extent necessary to allow You to exercise the Licensed Rights, but not otherwise.
+Patent and trademark rights are not licensed under this Public License.
+To the extent possible, the Licensor waives any right to collect royalties from You for the exercise of the Licensed Rights, whether directly or through a collecting society under any voluntary or waivable statutory or compulsory licensing scheme. In all other cases the Licensor expressly reserves any right to collect such royalties.
+Section 3 – License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the following conditions.
+
+Attribution.
+
+If You Share the Licensed Material (including in modified form), You must:
+
+retain the following if it is supplied by the Licensor with the Licensed Material:
+identification of the creator(s) of the Licensed Material and any others designated to receive attribution, in any reasonable manner requested by the Licensor (including by pseudonym if designated);
+a copyright notice;
+a notice that refers to this Public License;
+a notice that refers to the disclaimer of warranties;
+a URI or hyperlink to the Licensed Material to the extent reasonably practicable;
+indicate if You modified the Licensed Material and retain an indication of any previous modifications; and
+indicate the Licensed Material is licensed under this Public License, and include the text of, or the URI or hyperlink to, this Public License.
+You may satisfy the conditions in Section 3(a)(1) in any reasonable manner based on the medium, means, and context in which You Share the Licensed Material. For example, it may be reasonable to satisfy the conditions by providing a URI or hyperlink to a resource that includes the required information.
+If requested by the Licensor, You must remove any of the information required by Section 3(a)(1)(A) to the extent reasonably practicable.
+If You Share Adapted Material You produce, the Adapter's License You apply must not prevent recipients of the Adapted Material from complying with this Public License.
+Section 4 – Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that apply to Your use of the Licensed Material:
+
+for the avoidance of doubt, Section 2(a)(1) grants You the right to extract, reuse, reproduce, and Share all or a substantial portion of the contents of the database;
+if You include all or a substantial portion of the database contents in a database in which You have Sui Generis Database Rights, then the database in which You have Sui Generis Database Rights (but not its individual contents) is Adapted Material; and
+You must comply with the conditions in Section 3(a) if You Share all or a substantial portion of the contents of the database.
+For the avoidance of doubt, this Section 4 supplements and does not replace Your obligations under this Public License where the Licensed Rights include other Copyright and Similar Rights.
+Section 5 – Disclaimer of Warranties and Limitation of Liability.
+
+Unless otherwise separately undertaken by the Licensor, to the extent possible, the Licensor offers the Licensed Material as-is and as-available, and makes no representations or warranties of any kind concerning the Licensed Material, whether express, implied, statutory, or other. This includes, without limitation, warranties of title, merchantability, fitness for a particular purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in part, this disclaimer may not apply to You.
+To the extent possible, in no event will the Licensor be liable to You on any legal theory (including, without limitation, negligence) or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, costs, expenses, or damages arising out of this Public License or use of the Licensed Material, even if the Licensor has been advised of the possibility of such losses, costs, expenses, or damages. Where a limitation of liability is not allowed in full or in part, this limitation may not apply to You.
+The disclaimer of warranties and limitation of liability provided above shall be interpreted in a manner that, to the extent possible, most closely approximates an absolute disclaimer and waiver of all liability.
+Section 6 – Term and Termination.
+
+This Public License applies for the term of the Copyright and Similar Rights licensed here. However, if You fail to comply with this Public License, then Your rights under this Public License terminate automatically.
+Where Your right to use the Licensed Material has terminated under Section 6(a), it reinstates:
+
+automatically as of the date the violation is cured, provided it is cured within 30 days of Your discovery of the violation; or
+upon express reinstatement by the Licensor.
+For the avoidance of doubt, this Section 6(b) does not affect any right the Licensor may have to seek remedies for Your violations of this Public License.
+For the avoidance of doubt, the Licensor may also offer the Licensed Material under separate terms or conditions or stop distributing the Licensed Material at any time; however, doing so will not terminate this Public License.
+Sections 1, 5, 6, 7, and 8 survive termination of this Public License.
+Section 7 – Other Terms and Conditions.
+
+The Licensor shall not be bound by any additional or different terms or conditions communicated by You unless expressly agreed.
+Any arrangements, understandings, or agreements regarding the Licensed Material not stated herein are separate from and independent of the terms and conditions of this Public License.
+Section 8 – Interpretation.
+
+For the avoidance of doubt, this Public License does not, and shall not be interpreted to, reduce, limit, restrict, or impose conditions on any use of the Licensed Material that could lawfully be made without permission under this Public License.
+To the extent possible, if any provision of this Public License is deemed unenforceable, it shall be automatically reformed to the minimum extent necessary to make it enforceable. If the provision cannot be reformed, it shall be severed from this Public License without affecting the enforceability of the remaining terms and conditions.
+No term or condition of this Public License will be waived and no failure to comply consented to unless expressly agreed to by the Licensor.
+Nothing in this Public License constitutes or may be interpreted as a limitation upon, or waiver of, any privileges and immunities that apply to the Licensor or You, including from the legal processes of any jurisdiction or authority.
+Creative Commons is not a party to its public licenses. Notwithstanding, Creative Commons may elect to apply one of its public licenses to material it publishes and in those instances will be considered the “Licensor.” The text of the Creative Commons public licenses is dedicated to the public domain under the CC0 Public Domain Dedication. Except for the limited purpose of indicating that material is shared under a Creative Commons public license or as otherwise permitted by the Creative Commons policies published at creativecommons.org/policies, Creative Commons does not authorize the use of the trademark “Creative Commons” or any other trademark or logo of Creative Commons without its prior written consent including, without limitation, in connection with any unauthorized modifications to any of its public licenses or any other arrangements, understandings, or agreements concerning use of licensed material. For the avoidance of doubt, this paragraph does not form part of the public licenses.
+
+Creative Commons may be contacted at creativecommons.org.</term:license>
+  <rdfs:comment xml:lang="sabanciuniv.edu with questions.">Ontology created by Samer Sharani. Contact: ssharani</rdfs:comment>
+</owl:Ontology>
+
+<owl:ObjectProperty rdf:about="#LivesIn">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#HostPlace"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#belongTo">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#Belonging"/>
+  <rdfs:label>belong To</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasAgency">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#RefugeeAgency"/>
+  <rdfs:label>has Agency</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasExpectedLevelOfReintegration">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#Reintegration"/>
+  <rdfs:label>has Expected Level Of Reintegration</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasHome">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#HomePlace"/>
+  <rdfs:label>has Home</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasLevelOfIntegration">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#Integration"/>
+  <rdfs:label>has Level Of Integration</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#isAttachedTo">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#Attachment"/>
+  <rdfs:label>is Attached To</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#makePlaceOf">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#PlaceMaking"/>
+  <rdfs:label>make Place Of</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#practiceTransnationalism">
+  <rdfs:domain rdf:resource="#Refugee"/>
+  <rdfs:range rdf:resource="#Transnationalism"/>
+  <rdfs:label>practice Transnationalism</rdfs:label>
+</owl:ObjectProperty>
+
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+
+<owl:Class rdf:about="#Refugee">
+  <owl:disjointWith rdf:resource="#Transnationalism"/>
+  <rdfs:isDefinedBy>A person who is (1) under temporary protection,  fully enjoys the legal definition of refugee status, or who resides illegally in a host place; and (2) who had fled her country of origin involuntarily.</rdfs:isDefinedBy>
+  <rdfs:label>Refugee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HostPlace">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+  <rdfs:isDefinedBy>The place where a refugee lives. It may refer to a nation-state, city, or a village.</rdfs:isDefinedBy>
+  <rdfs:label>Host Place</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Belonging">
+  <rdfs:subClassOf rdf:resource="#RefugeeIdentity"/>
+  <rdfs:isDefinedBy>Refugee's linkage to a group; to which extent a refugee is self-identified as a member of a group (national, religious, ethnic, etc.).</rdfs:isDefinedBy>
+  <rdfs:label>Belonging</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#RefugeeAgency">
+  <rdfs:isDefinedBy>The capability of refugees to act, to choose, to be as they believe that will serve their well-being the best. It is, in othre words, to be autonomous.</rdfs:isDefinedBy>
+  <rdfs:label>Refugee  Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Reintegration">
+  <rdfs:isDefinedBy>The ability of those who return to re-establsih their lives in their countries of origin.</rdfs:isDefinedBy>
+  <rdfs:label>Reintegration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HomePlace">
+  <rdfs:subClassOf rdf:resource="#Place"/>
+  <rdfs:isDefinedBy>The place of origin from where refugees had fled. It cna be a city, a vilalge, or a nation-state.</rdfs:isDefinedBy>
+  <rdfs:label>Home Place</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Integration">
+  <rdfs:isDefinedBy>Active engagement of refugees in their host countries, culturally, economically, and socially. It is the opposite of exclusion, isolation, and limbo life.</rdfs:isDefinedBy>
+  <rdfs:label>Integration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Attachment">
+  <rdfs:subClassOf rdf:resource="#RefugeeIdentity"/>
+  <rdfs:isDefinedBy>Refugee's linkage to a place; to which extent a refugee is attached to a place as a part of her identity.</rdfs:isDefinedBy>
+  <rdfs:label>Attachment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PlaceMaking">
+  <rdfs:subClassOf rdf:resource="#RefugeeIdentity"/>
+  <rdfs:isDefinedBy>The way a refugee conceptualizes, understands, and struggles to form - by whatever means she has - a place where she lives or desires to live (for example, by decorating her house in a similar way to traditional houses in her home place, or by political actiivities to form a new government in home, etc.).</rdfs:isDefinedBy>
+  <rdfs:label>Place Making</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Transnationalism">
+  <rdfs:isDefinedBy>Activities of refugees that link or bridge multiple places together, home and host. These activities or practices can be endorsed at the everyday level or in the long term.</rdfs:isDefinedBy>
+  <rdfs:label>Transnationalism</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Place">
+  <owl:disjointWith rdf:resource="#Refugee"/>
+  <owl:disjointWith rdf:resource="#Transnationalism"/>
+  <rdfs:isDefinedBy>The physical, environemntal, and geographical "container" where a refugee (or any other person) lives, acts, resides, or passes through, and [the place is] the idea or abstract notion that a refugee refers to as a site of residence,  home, or an anchor of culture. Place need not be material only. It is immaterial entity (manifesting as perception of tradition, as memory, as a definer of identity, etc.) as much as a material entity or a physical site.</rdfs:isDefinedBy>
+  <rdfs:label>Place</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#RefugeeIdentity">
+  <rdfs:isDefinedBy>The way a refugee defines herself; the sense of a self.</rdfs:isDefinedBy>
+  <rdfs:label>Refugee Identity</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#CulturalIntegration">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#HighCulturalIntegration"/>
+        <rdf:Description rdf:about="#LowCulturalIntegration"/>
+        <rdf:Description rdf:about="#MediumCulturalIntegration"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Integration"/>
+  <rdfs:isDefinedBy>The refugee's ability to speak the local language and to embrace or to live in harmony with the  values of the host country.</rdfs:isDefinedBy>
+  <rdfs:label>Cultural Integration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#EconomicIntegration">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#HighEconIntegration"/>
+        <rdf:Description rdf:about="#LowEconIntegration"/>
+        <rdf:Description rdf:about="#MediumEconIntegration"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Integration"/>
+  <rdfs:isDefinedBy>The refugee's ability to be active in the job market in the host place/country.</rdfs:isDefinedBy>
+  <rdfs:label>Economic Integration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#EconomicWellbeing">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#HighEconWellbeingInHome"/>
+        <rdf:Description rdf:about="#LowEconWellbeingInhome"/>
+        <rdf:Description rdf:about="#MediumEconWellbeingInHome"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Reintegration"/>
+  <rdfs:comment>Right now the RefugeeReturn Ontology models things at a fairly high level of abstraction. It is just the beginning of a model we plan to expand as we get actual data. So while in future versions each Refugee will have a specific value for EconomicWellbeing, in the current ontology EconomicWellbeing is a defined class with only three instances representing a range of values: High, Medium, and Low. This can still do some modeling work for us because we can reason about each different (abstract) value. As the ontology evolves and becomes richer, we anticipate that indeed each individual will have a specific value for their Economic Well-being.</rdfs:comment>
+  <rdfs:isDefinedBy>The ability of a returnee to be active in her home again economically and in the job market.</rdfs:isDefinedBy>
+  <rdfs:label>Economic Wellbeing</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HighAgency">
+  <rdfs:subClassOf rdf:resource="#RefugeeAgency"/>
+  <rdfs:isDefinedBy>The highly autonomy, capability, and power enjoyed by a refugee in a way that makes her, even relatively, able to carve out her fate and livelihood.</rdfs:isDefinedBy>
+  <rdfs:label>High Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HomeAttachment">
+  <rdfs:subClassOf rdf:resource="#Attachment"/>
+  <rdfs:comment>Refugee's attachement to a place(s) that is related to or located in her home.</rdfs:comment>
+  <rdfs:label>Home Attachment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HomeBelonging">
+  <rdfs:subClassOf rdf:resource="#Belonging"/>
+  <rdfs:comment>Belonging to a group that resides in refugees' original country (home place).</rdfs:comment>
+  <rdfs:label>Home Belonging</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HomeMaking">
+  <rdfs:subClassOf rdf:resource="#PlaceMaking"/>
+  <rdfs:comment>Activities that are located physcially  in the refugee's home place or essentially related to it (even if the refugee lives remotely).</rdfs:comment>
+  <rdfs:label>Home Making</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HostAttachment">
+  <rdfs:subClassOf rdf:resource="#Attachment"/>
+  <rdfs:comment>Refugee's attachement to a place(s) that is related to or located in her host place/country.</rdfs:comment>
+  <rdfs:label>Host Attachment</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HostBelonging">
+  <rdfs:subClassOf rdf:resource="#Belonging"/>
+  <rdfs:comment>Belonging to a group(s) that resides or exists in the host country.</rdfs:comment>
+  <rdfs:label>Host Belonging</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#HostMaking">
+  <rdfs:subClassOf rdf:resource="#PlaceMaking"/>
+  <rdfs:comment>Activities that are located physcially in the refugee's host place or essentially related to it.</rdfs:comment>
+  <rdfs:label>Host Making</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#LowAgency">
+  <rdfs:subClassOf rdf:resource="#RefugeeAgency"/>
+  <rdfs:isDefinedBy>The weak autonomy, capability, and power of a refugee in a way that makes her unable to carve out her fate and livelihood.</rdfs:isDefinedBy>
+  <rdfs:label>Low Agency</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Nationalized">
+  <rdfs:subClassOf rdf:resource="#Refugee"/>
+  <rdfs:isDefinedBy>A refugee who has been granted the citizenship of the host country.</rdfs:isDefinedBy>
+  <rdfs:label>Nationalized</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#PoliticalProcess">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#StablePoliticalProcess"/>
+        <rdf:Description rdf:about="#UnstablePoliticalProcess"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Reintegration"/>
+  <rdfs:comment>Right now the RefugeeReturn Ontology models things at a fairly high level of abstraction. It is just the beginning of a model we plan to expand as we get actual data. So while in future versions each Refugee will have a specific value for Political Process, in the current ontology Political Process is a defined class with only two instances representing a range of values: Stable, Unstable. This can still do some modeling work for us because we can reason about each different (abstract) value. As the ontology evolves and becomes richer, we anticipate that indeed each individual will have a specific value for their (perception of) the Political Process in their home.</rdfs:comment>
+  <rdfs:isDefinedBy>The ability of returnee to enjoy stable (at least) political environment in her home.</rdfs:isDefinedBy>
+  <rdfs:label>Political Process</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#SocialCapital">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#BadSocialCapitalInHome"/>
+        <rdf:Description rdf:about="#GoodSocialCapitalInhome"/>
+        <rdf:Description rdf:about="#MediumSocialcapitalInHome"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Reintegration"/>
+  <rdfs:isDefinedBy>The social network, social capital, that a returnee has in her home.</rdfs:isDefinedBy>
+  <rdfs:label>Social Capital</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#SocialIntegration">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:oneOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#HighSocioIntegration"/>
+        <rdf:Description rdf:about="#LowSocioIntegration"/>
+        <rdf:Description rdf:about="#MediumSocioIntegration"/>
+      </owl:oneOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:subClassOf rdf:resource="#Integration"/>
+  <rdfs:isDefinedBy>The refugee's ability to build a wide and deep social network in the host country, such as having friends and good relations with neighbors.</rdfs:isDefinedBy>
+  <rdfs:label>Social Integration</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#Stayee">
+  <rdfs:subClassOf rdf:resource="#Refugee"/>
+  <rdfs:isDefinedBy>A refugee who stays in the host country, legally or illegally,  without being nationalized.</rdfs:isDefinedBy>
+  <rdfs:label>Stayee</rdfs:label>
+</owl:Class>
+
+<owl:Class rdf:about="#WouldBeReturnee">
+  <owl:equivalentClass>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#Refugee"/>
+        <owl:Class>
+          <owl:unionOf rdf:parseType="Collection">
+            <owl:Class>
+              <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasAgency"/>
+                  <owl:someValuesFrom rdf:resource="#HighAgency"/>
+                </owl:Restriction>
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#practiceTransnationalism"/>
+                  <owl:someValuesFrom rdf:resource="#Transnationalism"/>
+                </owl:Restriction>
+              </owl:intersectionOf>
+            </owl:Class>
+            <owl:Class>
+              <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasAgency"/>
+                  <owl:someValuesFrom rdf:resource="#HighAgency"/>
+                </owl:Restriction>
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasExpectedLevelOfReintegration"/>
+                  <owl:hasValue rdf:resource="#GoodSocialCapitalInhome"/>
+                </owl:Restriction>
+              </owl:intersectionOf>
+            </owl:Class>
+            <owl:Class>
+              <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasAgency"/>
+                  <owl:someValuesFrom rdf:resource="#HighAgency"/>
+                </owl:Restriction>
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasExpectedLevelOfReintegration"/>
+                  <owl:hasValue rdf:resource="#HighEconWellbeingInHome"/>
+                </owl:Restriction>
+              </owl:intersectionOf>
+            </owl:Class>
+            <owl:Class>
+              <owl:intersectionOf rdf:parseType="Collection">
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasAgency"/>
+                  <owl:someValuesFrom rdf:resource="#HighAgency"/>
+                </owl:Restriction>
+                <owl:Restriction>
+                  <owl:onProperty rdf:resource="#hasExpectedLevelOfReintegration"/>
+                  <owl:hasValue rdf:resource="#StablePoliticalProcess"/>
+                </owl:Restriction>
+              </owl:intersectionOf>
+            </owl:Class>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#belongTo"/>
+              <owl:someValuesFrom rdf:resource="#HomeBelonging"/>
+            </owl:Restriction>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#isAttachedTo"/>
+              <owl:someValuesFrom rdf:resource="#HomeAttachment"/>
+            </owl:Restriction>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#makePlaceOf"/>
+              <owl:someValuesFrom rdf:resource="#HomeMaking"/>
+            </owl:Restriction>
+          </owl:unionOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </owl:equivalentClass>
+  <rdfs:isDefinedBy>A refugee who is determinant and fully willing to return (to home).</rdfs:isDefinedBy>
+  <rdfs:label>Would Be Returnee</rdfs:label>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#HighCulturalIntegration">
+  <rdfs:label>High Cultural Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LowCulturalIntegration">
+  <rdf:type rdf:resource="#CulturalIntegration"/>
+  <rdfs:label>Low Cultural Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MediumCulturalIntegration">
+  <rdfs:label>Medium Cultural Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HighEconIntegration">
+  <rdfs:label>High Econ Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LowEconIntegration">
+  <rdf:type rdf:resource="#EconomicIntegration"/>
+  <rdfs:label>Low Econ Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MediumEconIntegration">
+  <rdfs:label>Medium Econ Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HighEconWellbeingInHome">
+  <rdfs:label>High Econ Wellbeing In Home</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LowEconWellbeingInhome">
+  <rdf:type rdf:resource="#EconomicWellbeing"/>
+  <rdfs:label>Low Econ Wellbeing Inhome</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MediumEconWellbeingInHome">
+  <rdfs:label>Medium Econ Wellbeing In Home</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#StablePoliticalProcess">
+  <rdf:type rdf:resource="#Reintegration"/>
+  <rdfs:label>Stable Political Process</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#UnstablePoliticalProcess">
+  <rdf:type rdf:resource="#PoliticalProcess"/>
+  <rdfs:label>Unstable Political Process</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BadSocialCapitalInHome">
+  <rdf:type rdf:resource="#SocialCapital"/>
+  <rdfs:label>Bad Social Capital In Home</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#GoodSocialCapitalInhome">
+  <rdf:type rdf:resource="#Reintegration"/>
+  <rdfs:label>Good Social Capital Inhome</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MediumSocialcapitalInHome">
+  <rdfs:label>Medium Socialcapital In Home</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HighSocioIntegration">
+  <rdfs:label>High Socio Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LowSocioIntegration">
+  <rdf:type rdf:resource="#SocialIntegration"/>
+  <rdfs:label>Low Socio Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MediumSocioIntegration">
+  <rdfs:label>Medium Socio Integration</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Ali1">
+  <rdf:type rdf:resource="#Refugee"/>
+  <rdfs:label>Ali1</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Austria">
+  <rdf:type rdf:resource="#HostPlace"/>
+  <rdfs:label>Austria</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#BuildingHouseInGermany">
+  <rdf:type rdf:resource="#HostMaking"/>
+  <rdfs:label>Building House In Germany</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#CastleInSyria">
+  <rdf:type rdf:resource="#HomeAttachment"/>
+  <rdfs:label>Castle In Syria</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Employee">
+  <rdf:type rdf:resource="#HighAgency"/>
+  <rdfs:label>Employee</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#France">
+  <rdf:type rdf:resource="#HostPlace"/>
+  <rdfs:label>France</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Friends">
+  <rdf:type rdf:resource="#HomeBelonging"/>
+  <rdfs:label>Friends</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Germany">
+  <rdf:type rdf:resource="#HostPlace"/>
+  <rdfs:label>Germany</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Germany1">
+  <rdf:type rdf:resource="#HostPlace"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HouseInGermany">
+  <rdf:type rdf:resource="#HostAttachment"/>
+  <rdfs:label>House In Germany</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Iran">
+  <rdf:type rdf:resource="#HomePlace"/>
+  <rdfs:label>Iran</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#JobGroup">
+  <rdf:type rdf:resource="#HostBelonging"/>
+  <rdfs:label>Job Group</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LivingInChurch">
+  <rdf:type rdf:resource="#HostMaking"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#LovingBerlin">
+  <rdf:type rdf:resource="#HostAttachment"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#PhD">
+  <rdf:type rdf:resource="#HighAgency"/>
+  <rdfs:label>Ph D</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Poor">
+  <rdf:type rdf:resource="#LowAgency"/>
+  <rdfs:label>Poor</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Remittance">
+  <rdf:type rdf:resource="#Transnationalism"/>
+  <rdfs:label>Remittance</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Remitence</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#RemoteInvestment">
+  <rdf:type rdf:resource="#HomeMaking"/>
+  <rdfs:label>Remote Investment</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Salamieh">
+  <rdf:type rdf:resource="#HomePlace"/>
+  <rdfs:label>Salamieh</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Salamieh1">
+  <rdf:type rdf:resource="#HomePlace"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samer1">
+  <rdf:type rdf:resource="#Refugee"/>
+  <hasAgency rdf:resource="#PhD"/>
+  <practiceTransnationalism rdf:resource="#Remittance"/>
+  <rdfs:label>Samer1</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samer2">
+  <rdf:type rdf:resource="#Refugee"/>
+  <belongTo rdf:resource="#Friends"/>
+  <rdfs:label>Samer2</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samer3">
+  <rdf:type rdf:resource="#Refugee"/>
+  <hasAgency rdf:resource="#Poor"/>
+  <isAttachedTo rdf:resource="#CastleInSyria"/>
+  <rdfs:label>Samer3</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Samer4">
+  <rdf:type rdf:resource="#Refugee"/>
+  <LivesIn rdf:resource="#Germany"/>
+  <belongTo rdf:resource="#ToNeighborhoodInBerlin"/>
+  <hasAgency rdf:resource="#Unemployed"/>
+  <hasExpectedLevelOfReintegration rdf:resource="#BadSocialCapitalInHome"/>
+  <hasLevelOfIntegration rdf:resource="#HighCulturalIntegration"/>
+  <hasLevelOfIntegration rdf:resource="#MediumEconIntegration"/>
+  <hasLevelOfIntegration rdf:resource="#MediumSocioIntegration"/>
+  <isAttachedTo rdf:resource="#LovingBerlin"/>
+  <makePlaceOf rdf:resource="#LivingInChurch"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#ToNeighborhoodInBerlin">
+  <rdf:type rdf:resource="#HostBelonging"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Unemployed">
+  <rdf:type rdf:resource="#LowAgency"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Syria">
+  <rdf:type rdf:resource="#HomePlace"/>
+  <rdfs:label>Syria</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TestAgencyQuery1">
+  <rdf:type rdf:resource="#WouldBeReturnee"/>
+  <hasAgency rdf:resource="#PhD"/>
+  <rdfs:label>Test Agency Query1</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#TestAgencyQuery2">
+  <rdf:type rdf:resource="#Refugee"/>
+  <hasAgency rdf:resource="#PhD"/>
+  <rdfs:label>Test Agency Query2</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kheder</rdfs:label>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Unskilled">
+  <rdf:type rdf:resource="#LowAgency"/>
+  <rdfs:label>Unskilled</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Kheder">
+  <rdf:type rdf:resource="#Refugee"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John</rdfs:label>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Anas">
+  <rdf:type rdf:resource="#Refugee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#test2f">
+  <rdf:type rdf:resource="#Refugee"/>
+  <hasExpectedLevelOfReintegration rdf:resource="#GoodSocialCapitalInhome"/>
+  <hasLevelOfIntegration rdf:resource="#LowSocioIntegration"/>
+  <practiceTransnationalism rdf:resource="#Reimetance"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#HighEconWellbeingInhome">
+  <rdf:type rdf:resource="#Reintegration"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#on">
+  <rdf:type rdf:resource="#Integration"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Reimetance">
+  <rdf:type rdf:resource="#Transnationalism"/>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

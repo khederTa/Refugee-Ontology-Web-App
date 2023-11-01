@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refugee ontology for home return">
+    <meta name="keywords" content="Refugee, Ontology, Returnee">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7yYb0GnhhfsHSlUDFbrjYGdAyM6QJ7Ygxyg&usqp=CAU"
+        type="image/x-icon">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        .edge {
+            cursor: pointer;
+        }
+
+        .node circle {
+            fill: #fff;
+            stroke: steelblue;
+            stroke-width: 3px;
+        }
+
+        .node text {
+            font: 12px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 2px;
+        }
+
+        .pointer-class {
+            cursor: pointer;
+        }
+
+        .pointer-class:hover {
+            font-weight: bold;
+        }
+    </style>
+    <title>Refugee Ontology</title>
+</head>
+
+<body>
+    <nav class="container">
+        <h1>REFUGEE ONTOLOGY</h1>
+        <a href="/insert">ADD INSTANCE</a>
+        <a href="#query">QUERY </a>
+        <a href="#concept">CONCEPT</a>
+        <a href="#intro">INTRODUCTION</a>
+        
+    </nav>
+    <main>
+        <div class="abstract container">
+            <aside class="left-abstract">
+                <h2>Ontology of Refugee Home
+                    Return V1</h2>
+                <!--<a href="#intro" class="learn">LEARN MORE</a>-->
+            </aside>
+            <section class="right-abstract">
+                <p>
+                    Refugeehood is a multidimensional phenomenon and a complex challenge facing the world today. To
+                    equip policy-makers and civil organizations with knowledge tools that can improve their plans,
+                    programs, and evaluation, we developed an ontology of refugees’ home return. Home return is a
+                    sub-field of
+                    refugee studies and one of the most elusive concepts. Modeling this sub-field, using the OntoClean
+                    method,
+                    helps us create a coherent whole, accounting for the complex relations between the various factors
+                    that construct home return. In addition, the ontology rigorously defines and (re)constructs the
+                    concepts
+                    from the literature on home return, providing clarity and rigor for scholars of refugee studies. We
+                    conclude with discussion of future plans to develop an online application that makes this ontology
+                    friendly
+                    for normal users.
+
+                </p>
+            </section>
+        </div>
+        <hr />
+        <div class="intro container">
+            <section class="intro-section">
+                <h2 class="intro-header">
+                    <a id="intro">INTRODUCTION</a>
+                </h2>
+                <p>
+                    The past decade has seen a significant increase in global refugee movements, largely due to
+                    conflicts in the Middle East. This has resulted in a refugee crisis, particularly within the
+                    European Union, causing political and social upheaval. This paper aims to develop an ontology to
+                    improve the management of refugee-related issues, focusing on the concept of home return. Despite
+                    extensive academic literature on refugees, practical application of this knowledge in governance
+                    remains challenging. The proposed ontology aims to bridge this gap, providing a structured approach
+                    to understanding and applying concepts from refugee studies. The methodology offers logical rigor
+                    and facilitates knowledge organization and semantic search. The long-term goals include enabling
+                    policy-makers to understand and apply concepts from the literature, and to upload real data to test
+                    relations between various concepts and measure program impact. The paper focuses on the complex
+                    issue of refugee home return, aiming to formally model this elusive field of knowledge.
+
+                </p>
+            </section>
+        </div>
+        <hr />
+        <div class="container">
+            <h2 class="concept-header"><a id="concept">CONCEPT</a></h2>
+            <div class="concept-section">
+
+                <aside class="graph1 left-concept">
+                    <div class="main-tree"></div>
+                </aside>
+                <section class="right-concept">
+                    <h3>EXPLANATION</h3>
+                    <p id="description"></p>
+                </section>
+            </div>
+        </div>
+
+        <hr />
+        <div class="container">
+            <h2 class="concept-header"><a id="concept">Relation</a></h2>
+            <div>
+                <svg id="main-graph" width="800" height="600"></svg>
+            </div>
+        </div>
+        <hr />
+        <div id="allegrograph-query">
+            <h2 class="query-header">
+                <a id="query">QUERY EXPLANATION</a>
+            </h2>
+            <div class="query">
+                <aside class="left-query container">
+                    <h3>Make Queries On Refugees</h3>
+                    <form action="/query" method="POST" class="query-from">
+                        <!-- Checkbox for Belonging -->
+                        <div class="cond-box cond1">
+                            <label class="query-name">Refugee Belongs To:</label><br>
+                            <input type="checkbox" name="homeBelonging" id="homeBelonging">
+                            <label for="homeBelonging">Home Belonging</label>
+                            <input type="checkbox" name="hostBelonging" id="hostBelonging">
+                            <label for="hostBelonging">Host Belonging</label>
+                        </div>
+
+                        <!-- Radio buttons for Refugee Has Agency -->
+                        <div class="cond-box cond2">
+                            <label class="query-name">Refugee Has Agency:</label><br>
+                            <input type="radio" id="highAgency" name="hasAgency" value="HighAgency">
+                            <label for="highAgency">High Agency</label>
+                            <input type="radio" id="lowAgency" name="hasAgency" value="LowAgency">
+                            <label for="lowAgency">Low Agency</label>
+                        </div>
+
+                        <!-- Checkboxes and radio buttons for Refugee Has Expected Level Of Reintegration -->
+                        <div class="cond-box cond3">
+                            <label class="query-name">Refugee Has Expected Level Of Reintegration:</label><br>
+                            <div class="form-query-sec">
+                                <label for="economicWellbeing">Economic Wellbeing</label>
+                                <div class="form-sub-query-sec">
+                                    <input type="radio" name="economicWellbeing" value="High Econ Wellbeing Inhome"
+                                        id="HighEconWellbeingInHome">
+                                    <label for="HighEconWellbeingInHome">High Economic Wellbeing In Home</label>
+                                    <input type="radio" name="economicWellbeing" value="Medium Econ Wellbeing Inhome"
+                                        id="MediumEconWellbeingInHome">
+                                    <label for="MediumEconWellbeingInHome">Medium Econ Wellbeing In Home</label>
+                                    <input type="radio" name="economicWellbeing" value="Low Econ Wellbeing Inhome"
+                                        id="LowEconWellbeingInHome">
+                                    <label for="LowEconWellbeingInHome">Low Econ Wellbeing Inhome</label>
+                                </div>
+                            </div>
+
+                            <div class="form-query-sec">
+                                <label for="politicalProcess">Political Process</label>
+                                <div class="form-sub-query-sec">
+                                    <input type="radio" name="politicalProcess" value="Stable Political Process"
+                                        id="StablePoliticalProcess">
+                                    <label for="StablePoliticalProcess">High Economic Wellbeing In Home</label>
+                                    <input type="radio" name="politicalProcess" value="Unstable Political Process"
+                                        id="UnstablePoliticalProcess">
+                                    <label for="UnstablePoliticalProcess">Medium Econ Wellbeing In Home</label>
+                                </div>
+                            </div>
+
+                            <div class="form-query-sec">
+                                <label for="socialCapital">Social Capital</label>
+                                <div class="form-sub-query-sec">
+                                    <input type="radio" name="socialCapital" value="Good Social Capital Inhome"
+                                        id="GoodSocialCapitalInhome">
+                                    <label for="GoodSocialCapitalInhome">Good Social Capital In Home</label>
+                                    <input type="radio" name="socialCapital" value="Medium Socialcapital In Home"
+                                        id="MediumSocialcapitalInHome">
+                                    <label for="MediumSocialcapitalInHome">Medium Socialcapital In Home</label>
+                                    <input type="radio" name="socialCapital" value="Bad Social Capital In Home"
+                                        id="BadSocialCapitalInHome">
+                                    <label for="BadSocialCapitalInHome">Bad Social Capital In Home</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Checkboxes and radio buttons for Refugee Has Level Of Integration -->
+                        <div class="cond-box cond4">
+                            <label class="query-name">Refugee Has Level Of Integration:</label><br>
+                            <div class="form-query-sec">
+                                <label for="culturalIntegration">Cultural Integration</label>
+
+                                <div class="form-sub-query-sec">
+                                    <input type="radio" name="culturalIntegration" value="High Cultural Integration"
+                                        id="HighCulturalIntegration">
+                                    <label for="HighCulturalIntegration">Medium Cultural Integration</label>
+                                    <input type="radio" name="culturalIntegration" value="Medium Cultural Integration"
+                                        id="MediumCulturalIntegration">
+                                    <label for="MediumCulturalIntegration">Medium Cultural Integration</label>
+                                    <input type="radio" name="culturalIntegration" value="Low Cultural Integration"
+                                        id="LowCulturalIntegration">
+                                    <label for="LowCulturalIntegration">Low Cultural Integration</label>
+
+
+                                    <label for="economicIntegration">Economic Integration</label>
+                                    <div class="form-sub-query-sec">
+                                        <input type="radio" name="economicIntegration" value="High Econ Integration"
+                                            id="HighEconIntegration">
+                                        <label for="HighEconIntegration">High Econ Integration</label>
+                                        <input type="radio" name="economicIntegration" value="Medium Econ Integration"
+                                            id="MediumEconIntegration">
+                                        <label for="MediumEconIntegration">Medium Econ Integration</label>
+                                        <input type="radio" name="economicIntegration" value="Low Econ Integration"
+                                            id="LowEconIntegration">
+                                        <label for="LowEconIntegration">Low Econ Integration</label>
+                                    </div>
+
+                                    <label for="socialIntegration">Social Integration</label>
+                                    <div class="form-sub-query-sec">
+                                        <input type="radio" name="socialIntegration" value="High Socio Integration"
+                                            id="HighSocioIntegration">
+                                        <label for="HighSocioIntegration">High Socio Integration</label>
+                                        <input type="radio" name="socialIntegration" value="Medium Socio Integration"
+                                            id="MediumSocioIntegration">
+                                        <label for="MediumSocioIntegration">Medium Socio Integration</label>
+                                        <input type="radio" name="socialIntegration" value="Low Socio Integration"
+                                            id="LowSocioIntegration">
+                                        <label for="LowSocioIntegration">Low Socio Integration</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Checkboxes for Refugee Is Attached To -->
+                        <div class="cond-box cond5">
+                            <label class="query-name">Refugee Is Attached To:</label><br>
+                            <input type="checkbox" name="homeAttachment" id="homeAttachment">
+                            <label for="homeAttachment">Home Attachment</label>
+                            <input type="checkbox" name="hostAttachment" id="hostAttachment">
+                            <label for="hostAttachment">Host Attachment</label>
+                        </div>
+
+                        <!-- Checkboxes for Refugee Makes Place Of -->
+                        <div class="cond-box cond6">
+                            <label class="query-name">Refugee Makes Place Of:</label><br>
+                            <input type="checkbox" name="homeMaking" id="homeMaking">
+                            <label for="homeMaking">Home Making</label>
+                            <input type="checkbox" name="hostMaking" id="hostMaking">
+                            <label for="hostMaking">Host Making</label>
+                        </div>
+
+                        <!-- Radio buttons for Refugee Practices Transnationalism -->
+                        <div class="cond-box cond7">
+                            <label class="query-name">Refugee Practices Transnationalism:</label><br>
+                            <input type="radio" name="transnationalism" value="yes" id="yes">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="transnationalism" value="no" id="no">
+                            <label for="no">No</label>
+                        </div>
+
+                        <div class="submit-query cond8">
+                            <input type="submit" value="Make Query">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                    <form action="/returnee" method="POST">
+                        <div class="submit-query">
+                            <input type="submit" value="Refugee Would Be Returnee Query">
+                        </div>
+                    </form>
+
+
+                </aside>
+                <hr class="sub-sec-line" />
+                <section class="right-query">
+                    <!-- {{sparql_query}} -->
+                    <div class="result">
+                        <h3>Query Result</h3>
+                        {{ sparql_query }}
+                        <table>
+                            <thead>
+                                {% for h in header %}
+                                <th>{{ h }}</th>
+                                {% endfor %}
+                            </thead>
+                            <tbody>
+                                {% for item in result %}
+                                <tr>
+                                    {% for it in item %}
+                                    {% if it != none %}
+                                    <td>{{ it }}</td>
+                                    {% endif %}
+                                    {% endfor %}
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023 <span>Refugee Would Be Returnee Ontology</span> All Rights Reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/index1.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index2.js') }}"></script>
+</body>
+
+</html>

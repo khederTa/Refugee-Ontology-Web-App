@@ -71,7 +71,7 @@ const simulation = d3.forceSimulation(nodes)
 
 // Create the links and add them to the SVG
 const link = svg.append("g")
-    .attr("stroke", "#999")
+    .attr("stroke", "#8ec2fd")
     .attr("stroke-opacity", 0.6)
     .selectAll("line")
     .data(edges)
@@ -89,7 +89,7 @@ const node = svg.append("g")
     .data(nodes)
     .enter().append("circle")
     .attr("r", 10)
-    .attr("fill", "#ccc")
+    .attr("fill", "#DDD")
     .attr("stroke", "#fff")
     .attr("stroke-width", 3)
     .attr('title', d => d.relationship)
@@ -109,7 +109,7 @@ const label = svg.selectAll(null)
     .text(d => d.name)
     .attr("font-family", "Arial")
     .attr("font-size", 10)
-    .attr("fill", "#000")
+    .attr("fill", "#31323d")
     .attr('x', d => -d.name.length * 3)
     .attr('y', 5)
     .attr("pointer-events", "none")
@@ -150,8 +150,8 @@ function dragended(d) {
 
 // Define the click function
 function click(d) {
-    d3.selectAll("circle").attr("fill", "#ccc");
-    d3.select(this).attr("fill", "orange");
+    d3.selectAll("circle").attr("fill", "#ddd");
+    d3.select(this).attr("fill", "#6eb2ff");
     // d3.select("#description").text(d.name+": " +d.description);
 }
 
