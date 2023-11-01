@@ -19,6 +19,8 @@ def hello():
 def returnee():
     sparql_query, select, header = WouldBeReturneeQuery()
     onto = get_ontology("o2.owx").load()
+    # with onto:
+    #     sync_reasoner(infer_property_values = True, infer_data_property_values = True)
     result = list(default_world.sparql(sparql_query))
     result = pre_process(result)
     # return the results

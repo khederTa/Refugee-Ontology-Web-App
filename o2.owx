@@ -476,6 +476,7 @@ Creative Commons may be contacted at creativecommons.org.</term:license>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#MediumEconIntegration">
+  <rdf:type rdf:resource="#Integration"/>
   <rdfs:label>Medium Econ Integration</rdfs:label>
 </owl:NamedIndividual>
 
@@ -517,6 +518,7 @@ Creative Commons may be contacted at creativecommons.org.</term:license>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#HighSocioIntegration">
+  <rdf:type rdf:resource="#Integration"/>
   <rdfs:label>High Socio Integration</rdfs:label>
 </owl:NamedIndividual>
 
@@ -717,6 +719,10 @@ Creative Commons may be contacted at creativecommons.org.</term:license>
   <practiceTransnationalism rdf:resource="#Reimetance"/>
 </owl:NamedIndividual>
 
+<owl:NamedIndividual rdf:about="#Reimetance">
+  <rdf:type rdf:resource="#Transnationalism"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#HighEconWellbeingInhome">
   <rdf:type rdf:resource="#Reintegration"/>
 </owl:NamedIndividual>
@@ -725,7 +731,51 @@ Creative Commons may be contacted at creativecommons.org.</term:license>
   <rdf:type rdf:resource="#Integration"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#Reimetance">
+<owl:NamedIndividual rdf:about="#gfhfd">
+  <rdf:type rdf:resource="#Refugee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fgddfx">
+  <rdf:type rdf:resource="#RefugeeAgency"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#fdgdf">
+  <rdf:type rdf:resource="#Transnationalism"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tryrt">
+  <rdf:type rdf:resource="#Refugee"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tertert">
+  <rdf:type rdf:resource="#HomeBelonging"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#rteertre">
+  <rdf:type rdf:resource="#HostBelonging"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#eterte">
+  <rdf:type rdf:resource="#HomeAttachment"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#teerte">
+  <rdf:type rdf:resource="#HostAttachment"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#erterter">
+  <rdf:type rdf:resource="#HomeMaking"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#tete">
+  <rdf:type rdf:resource="#HostMaking"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#terte">
+  <rdf:type rdf:resource="#RefugeeAgency"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#eyter">
   <rdf:type rdf:resource="#Transnationalism"/>
 </owl:NamedIndividual>
 
