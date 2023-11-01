@@ -1,6 +1,5 @@
 Flask==2.2.5
 Owlready2==0.43
 gunicorn
-pellet==0.1.0
-hermit==0.1.1
+hermit
 
